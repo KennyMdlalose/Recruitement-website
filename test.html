@@ -1,0 +1,713 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="/Images/rma.ico?638655726884896294" type="image/icon" rel="icon">
+    <link href="/Images/rma.ico?638655726884896294" type="image/icon" rel="Shortcut Icon">
+
+    <script src="https://use.fontawesome.com/25b6310c01.js"></script>
+
+    <link href="/bundles/external-styles?v=76cmEmhNyl6uePAISetMbIzC5tyZDu99N9SkbsmUhUo1" rel="stylesheet"/>
+
+    <link href="/kendo/styles/custom?v=9EaYPpcxJSRWosB0yy1Ndwb3r2xbKwnUDaVuIp2JdkI1" rel="stylesheet"/>
+
+    <script src="/bundles/external-scripts?v=bN-q0s5ad1fXbbyTwMv0XBs4cioiuiTBdUuufl2HXy01"></script>
+
+    <script src="/kendo/scripts/custom?v=mXbLAPJYhRBFpSPXX3lE4bt-gO1VJ2VuCSI0WaxCfiU1"></script>
+
+
+
+
+        <link rel="stylesheet" href="/Styles/Company/rma.css" />
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WJF8KJTDL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1WJF8KJTDL');
+    </script>
+</head>
+<body>
+
+    
+<div class="navbar-fixed-bottom" style="background-color: #ebedeb;padding:10px" id="CookieModal">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 style="color:black"> Cookie Notice</h3>
+                <p>
+                    Please note that we use cookies to offer you a better user experience, analyse site traffic, and better serve advertising.
+                    By continuing to use this website, you consent to the use of cookies in accordance with the Direct Hire
+                    <a style="color:black;text-decoration:underline" href="https://jobs.mcidirecthire.com/home/terms" target="_blank">Terms & Conditions</a>,
+                    <a style="color: black; text-decoration: underline" href="https://jobs.mcidirecthire.com/home/policy" target="_blank">Privacy Policy</a>, and the
+                    <a style="color: black; text-decoration: underline" href="/External/Terms">rma Terms and Conditions</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <button type="button" onclick="AcceptCookies()" class="btn btn-primary w-100" style="margin-top:20px;width:100%"> I Understand</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/Scripts/CookiePrompt.js"></script>
+
+
+
+    
+
+
+
+
+
+<!-- menu -->
+<div id="Layout-Image-Container" style="width:100%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a href="https://www.randmutual.co.za">
+                        <img src="/Images/companylogos/rma.png" id="headerImage" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-large" id="extNavContainerLarge">
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.randmutual.co.za">HOME</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                                <li><a href="/default/External/CurrentOpportunities?Ref=h0dlwH0I-3w3dhArlXenNsWssG3qL4CR7z7MgW7OMueqpxlSrHqFK-PnZaWbJNRfX2CtACDlYjcZB41Of6kp2g">JOBS</a></li>
+                                <li><a href="https://www.randmutual.co.za/contact-us?Ref=h0dlwH0I-3w3dhArlXenNsWssG3qL4CR7z7MgW7OMueqpxlSrHqFK-PnZaWbJNRfX2CtACDlYjcZB41Of6kp2g">CONTACT US</a></li>
+                                <li><a href="/default/External/Terms?Ref=h0dlwH0I-3w3dhArlXenNsWssG3qL4CR7z7MgW7OMueqpxlSrHqFK-PnZaWbJNRfX2CtACDlYjcZB41Of6kp2g">TERMS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- Main Content-->
+<div id="content">
+
+<form action="/External/PostApplication?JobBoard=default" data-ajax="true" data-ajax-method="Post" enctype="multipart/form-data" id="ExternalApplicationForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="e7te03RDyPeeVY_G0LN78jU_h3H7Sr-a6HUKRAJa3_vrmXseHlVtGpg7-GvaBCkC2w_Og8hk3D6ao62GAA9zOI0oGSNJhP7egiLmuEEH2Ec1" /><input id="EncryptedString" name="EncryptedString" type="hidden" value="h0dlwH0I-3w3dhArlXenNsWssG3qL4CR7z7MgW7OMueqpxlSrHqFK-PnZaWbJNRfX2CtACDlYjcZB41Of6kp2g" /><input id="JobBoard" name="JobBoard" type="hidden" value="default" /><input id="EmailValidationId" name="EmailValidationId" type="hidden" value="" /><input id="ApplicationGuid" name="ApplicationGuid" type="hidden" value="af975007-03d0-4910-a96b-f789407714f3_638655726884739858" />        <!-- Candidate Info -->
+        <div id="CandidateDetailsContainer" class="container">
+            <div class="row" style="margin-bottom:20px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <span class="Candidate-Application-Main-Label">Please complete the following details to continue</span>
+                </div>
+            </div>
+
+            <div>
+
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_0__ControlTypeId" name="Controls[0].ControlTypeId" type="hidden" value="1" /><input id="Controls_0__DisplayName" name="Controls[0].DisplayName" type="hidden" value="Name" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_0__Id" name="Controls[0].Id" type="hidden" value="17" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_0__IsRequired" name="Controls[0].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_0__IsUnique" name="Controls[0].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_0__IsDefaultSystemControl" name="Controls[0].IsDefaultSystemControl" type="hidden" value="True" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input class="form-control DynamicControl  Alphanumeric dh-required-fields" data-jobcontrolId="17" id="Controls_0__SubmittedValue" name="Controls[0].SubmittedValue" placeholder="Name" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[0].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_1__ControlTypeId" name="Controls[1].ControlTypeId" type="hidden" value="1" /><input id="Controls_1__DisplayName" name="Controls[1].DisplayName" type="hidden" value="Surname" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_1__Id" name="Controls[1].Id" type="hidden" value="18" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_1__IsRequired" name="Controls[1].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_1__IsUnique" name="Controls[1].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_1__IsDefaultSystemControl" name="Controls[1].IsDefaultSystemControl" type="hidden" value="True" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Surname</label>
+                                <input class="form-control DynamicControl  Alphanumeric dh-required-fields" data-jobcontrolId="18" id="Controls_1__SubmittedValue" name="Controls[1].SubmittedValue" placeholder="Surname" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[1].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_2__ControlTypeId" name="Controls[2].ControlTypeId" type="hidden" value="1" /><input id="Controls_2__DisplayName" name="Controls[2].DisplayName" type="hidden" value="ID Number / Passport / Visa" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_2__Id" name="Controls[2].Id" type="hidden" value="35" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_2__IsRequired" name="Controls[2].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_2__IsUnique" name="Controls[2].IsUnique" type="hidden" value="True" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_2__IsDefaultSystemControl" name="Controls[2].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>ID Number / Passport / Visa</label>
+                                <input class="form-control DynamicControl  Secure dh-required-fields" data-jobcontrolId="35" id="Controls_2__SubmittedValue" name="Controls[2].SubmittedValue" placeholder="ID Number / Passport / Visa" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[2].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_3__ControlTypeId" name="Controls[3].ControlTypeId" type="hidden" value="6" /><input id="Controls_3__DisplayName" name="Controls[3].DisplayName" type="hidden" value="Gender" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_3__Id" name="Controls[3].Id" type="hidden" value="31" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_3__IsRequired" name="Controls[3].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_3__IsUnique" name="Controls[3].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_3__IsDefaultSystemControl" name="Controls[3].IsDefaultSystemControl" type="hidden" value="True" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_3__Options_0__Id" name="Controls[3].Options[0].Id" type="hidden" value="285" /><input id="Controls_3__Options_0__Name" name="Controls[3].Options[0].Name" type="hidden" value="Male" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_3__Options_1__Id" name="Controls[3].Options[1].Id" type="hidden" value="286" /><input id="Controls_3__Options_1__Name" name="Controls[3].Options[1].Name" type="hidden" value="Female" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label>Gender</label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="31" data-val="true" data-val-number="The field above must be a number." id="Controls_3__SubmittedIntValue" name="Controls[3].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="285">Male</option>
+<option value="286">Female</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[3].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_4__ControlTypeId" name="Controls[4].ControlTypeId" type="hidden" value="6" /><input id="Controls_4__DisplayName" name="Controls[4].DisplayName" type="hidden" value="Ethnicity" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_4__Id" name="Controls[4].Id" type="hidden" value="32" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_4__IsRequired" name="Controls[4].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_4__IsUnique" name="Controls[4].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_4__IsDefaultSystemControl" name="Controls[4].IsDefaultSystemControl" type="hidden" value="True" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_4__Options_0__Id" name="Controls[4].Options[0].Id" type="hidden" value="287" /><input id="Controls_4__Options_0__Name" name="Controls[4].Options[0].Name" type="hidden" value="African" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_4__Options_1__Id" name="Controls[4].Options[1].Id" type="hidden" value="288" /><input id="Controls_4__Options_1__Name" name="Controls[4].Options[1].Name" type="hidden" value="White" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_4__Options_2__Id" name="Controls[4].Options[2].Id" type="hidden" value="289" /><input id="Controls_4__Options_2__Name" name="Controls[4].Options[2].Name" type="hidden" value="Coloured" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_4__Options_3__Id" name="Controls[4].Options[3].Id" type="hidden" value="290" /><input id="Controls_4__Options_3__Name" name="Controls[4].Options[3].Name" type="hidden" value="Indian" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_4__Options_4__Id" name="Controls[4].Options[4].Id" type="hidden" value="291" /><input id="Controls_4__Options_4__Name" name="Controls[4].Options[4].Name" type="hidden" value="Other" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label>Ethnicity</label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="32" data-val="true" data-val-number="The field above must be a number." id="Controls_4__SubmittedIntValue" name="Controls[4].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="287">African</option>
+<option value="288">White</option>
+<option value="289">Coloured</option>
+<option value="290">Indian</option>
+<option value="291">Other</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[4].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_5__ControlTypeId" name="Controls[5].ControlTypeId" type="hidden" value="6" /><input id="Controls_5__DisplayName" name="Controls[5].DisplayName" type="hidden" value="Disability" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_5__Id" name="Controls[5].Id" type="hidden" value="33" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_5__IsRequired" name="Controls[5].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_5__IsUnique" name="Controls[5].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_5__IsDefaultSystemControl" name="Controls[5].IsDefaultSystemControl" type="hidden" value="True" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_5__Options_0__Id" name="Controls[5].Options[0].Id" type="hidden" value="292" /><input id="Controls_5__Options_0__Name" name="Controls[5].Options[0].Name" type="hidden" value="Yes" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_5__Options_1__Id" name="Controls[5].Options[1].Id" type="hidden" value="293" /><input id="Controls_5__Options_1__Name" name="Controls[5].Options[1].Name" type="hidden" value="No" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label>Disability</label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="33" data-val="true" data-val-number="The field above must be a number." id="Controls_5__SubmittedIntValue" name="Controls[5].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="292">Yes</option>
+<option value="293">No</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[5].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_6__ControlTypeId" name="Controls[6].ControlTypeId" type="hidden" value="1" /><input id="Controls_6__DisplayName" name="Controls[6].DisplayName" type="hidden" value="Email" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_6__Id" name="Controls[6].Id" type="hidden" value="19" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_6__IsRequired" name="Controls[6].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_6__IsUnique" name="Controls[6].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_6__IsDefaultSystemControl" name="Controls[6].IsDefaultSystemControl" type="hidden" value="True" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input class="form-control DynamicControl  Email dh-required-fields" data-jobcontrolId="19" id="Controls_6__SubmittedValue" name="Controls[6].SubmittedValue" placeholder="Email" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[6].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_7__ControlTypeId" name="Controls[7].ControlTypeId" type="hidden" value="1" /><input id="Controls_7__DisplayName" name="Controls[7].DisplayName" type="hidden" value="Telephone" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_7__Id" name="Controls[7].Id" type="hidden" value="20" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_7__IsRequired" name="Controls[7].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_7__IsUnique" name="Controls[7].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_7__IsDefaultSystemControl" name="Controls[7].IsDefaultSystemControl" type="hidden" value="True" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Telephone</label>
+                                <input class="form-control DynamicControl  PhoneNumber dh-required-fields" data-jobcontrolId="20" id="Controls_7__SubmittedValue" name="Controls[7].SubmittedValue" placeholder="Telephone" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[7].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_8__ControlTypeId" name="Controls[8].ControlTypeId" type="hidden" value="1" /><input id="Controls_8__DisplayName" name="Controls[8].DisplayName" type="hidden" value="Current CTC" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_8__Id" name="Controls[8].Id" type="hidden" value="1010" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_8__IsRequired" name="Controls[8].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_8__IsUnique" name="Controls[8].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_8__IsDefaultSystemControl" name="Controls[8].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Current CTC</label>
+                                <input class="form-control DynamicControl  Money dh-required-fields" data-jobcontrolId="1010" id="Controls_8__SubmittedValue" name="Controls[8].SubmittedValue" placeholder="Current CTC" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[8].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_9__ControlTypeId" name="Controls[9].ControlTypeId" type="hidden" value="1" /><input id="Controls_9__DisplayName" name="Controls[9].DisplayName" type="hidden" value="Current Job Title" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_9__Id" name="Controls[9].Id" type="hidden" value="1011" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_9__IsRequired" name="Controls[9].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_9__IsUnique" name="Controls[9].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_9__IsDefaultSystemControl" name="Controls[9].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Current Job Title</label>
+                                <input class="form-control DynamicControl  Secure dh-required-fields" data-jobcontrolId="1011" id="Controls_9__SubmittedValue" name="Controls[9].SubmittedValue" placeholder="Current Job Title" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[9].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_10__ControlTypeId" name="Controls[10].ControlTypeId" type="hidden" value="1" /><input id="Controls_10__DisplayName" name="Controls[10].DisplayName" type="hidden" value="Notice Period" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_10__Id" name="Controls[10].Id" type="hidden" value="1020" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_10__IsRequired" name="Controls[10].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_10__IsUnique" name="Controls[10].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_10__IsDefaultSystemControl" name="Controls[10].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Notice Period</label>
+                                <input class="form-control DynamicControl  Secure dh-required-fields" data-jobcontrolId="1020" id="Controls_10__SubmittedValue" name="Controls[10].SubmittedValue" placeholder="Notice Period" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[10].SubmittedValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_11__ControlTypeId" name="Controls[11].ControlTypeId" type="hidden" value="6" /><input id="Controls_11__DisplayName" name="Controls[11].DisplayName" type="hidden" value="Are you a born South African Citizen?" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_11__Id" name="Controls[11].Id" type="hidden" value="1012" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_11__IsRequired" name="Controls[11].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_11__IsUnique" name="Controls[11].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_11__IsDefaultSystemControl" name="Controls[11].IsDefaultSystemControl" type="hidden" value="False" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_11__Options_0__Id" name="Controls[11].Options[0].Id" type="hidden" value="301" /><input id="Controls_11__Options_0__Name" name="Controls[11].Options[0].Name" type="hidden" value="Yes" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_11__Options_1__Id" name="Controls[11].Options[1].Id" type="hidden" value="302" /><input id="Controls_11__Options_1__Name" name="Controls[11].Options[1].Name" type="hidden" value="No" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label>Are you a born South African Citizen?</label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="1012" data-val="true" data-val-number="The field above must be a number." id="Controls_11__SubmittedIntValue" name="Controls[11].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="301">Yes</option>
+<option value="302">No</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[11].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_12__ControlTypeId" name="Controls[12].ControlTypeId" type="hidden" value="2" /><input id="Controls_12__DisplayName" name="Controls[12].DisplayName" type="hidden" value="If you are not South African born what is your Naturalization Date? (Date, Month, Year)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_12__Id" name="Controls[12].Id" type="hidden" value="1013" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_12__IsRequired" name="Controls[12].IsRequired" type="hidden" value="False" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_12__IsUnique" name="Controls[12].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_12__IsDefaultSystemControl" name="Controls[12].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>If you are not South African born what is your Naturalization Date? (Date, Month, Year)</label>
+<input class="DynamicControl " data-jobcontrolId="1013" data-val="true" data-val-date="The field above must be a date." id="Controls_12__SubmittedDateValue" name="Controls[12].SubmittedDateValue" onkeydown="return false;" style="width: 100%" type="text" /><script>
+	kendo.syncReady(function(){jQuery("#Controls_12__SubmittedDateValue").kendoDatePicker({"format":"d MMM yyyy","min":new Date(1900,0,1,0,0,0,0),"max":new Date(2099,11,31,0,0,0,0)});});
+</script>                                <span class="field-validation-valid" data-valmsg-for="Controls[12].SubmittedDateValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_13__ControlTypeId" name="Controls[13].ControlTypeId" type="hidden" value="6" /><input id="Controls_13__DisplayName" name="Controls[13].DisplayName" type="hidden" value="Highest Qualification Passed" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Id" name="Controls[13].Id" type="hidden" value="1015" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_13__IsRequired" name="Controls[13].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_13__IsUnique" name="Controls[13].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_13__IsDefaultSystemControl" name="Controls[13].IsDefaultSystemControl" type="hidden" value="False" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_0__Id" name="Controls[13].Options[0].Id" type="hidden" value="311" /><input id="Controls_13__Options_0__Name" name="Controls[13].Options[0].Name" type="hidden" value="Grade 11 &amp; Lower" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_1__Id" name="Controls[13].Options[1].Id" type="hidden" value="312" /><input id="Controls_13__Options_1__Name" name="Controls[13].Options[1].Name" type="hidden" value="National Certificate (NQF Level 4)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_2__Id" name="Controls[13].Options[2].Id" type="hidden" value="313" /><input id="Controls_13__Options_2__Name" name="Controls[13].Options[2].Name" type="hidden" value="Higher Certificate (NQF Level 5)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_3__Id" name="Controls[13].Options[3].Id" type="hidden" value="314" /><input id="Controls_13__Options_3__Name" name="Controls[13].Options[3].Name" type="hidden" value="Diploma / Advanced Certificate (NQF Level 6)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_4__Id" name="Controls[13].Options[4].Id" type="hidden" value="315" /><input id="Controls_13__Options_4__Name" name="Controls[13].Options[4].Name" type="hidden" value="Bachelor&#39;s Degree / Advanced Diploma (NQF Level 7)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_5__Id" name="Controls[13].Options[5].Id" type="hidden" value="316" /><input id="Controls_13__Options_5__Name" name="Controls[13].Options[5].Name" type="hidden" value="Bachelor Honours Degree / Postgraduate Diploma / Bachelor&#39;s Degree (NQF Level 8)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_6__Id" name="Controls[13].Options[6].Id" type="hidden" value="317" /><input id="Controls_13__Options_6__Name" name="Controls[13].Options[6].Name" type="hidden" value="Master&#39;s Degree (NQF Level 9)" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_13__Options_7__Id" name="Controls[13].Options[7].Id" type="hidden" value="318" /><input id="Controls_13__Options_7__Name" name="Controls[13].Options[7].Name" type="hidden" value="Doctoral Degree (NQF Level 10)" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label>Highest Qualification Passed</label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="1015" data-val="true" data-val-number="The field above must be a number." id="Controls_13__SubmittedIntValue" name="Controls[13].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="311">Grade 11 &amp; Lower</option>
+<option value="312">National Certificate (NQF Level 4)</option>
+<option value="313">Higher Certificate (NQF Level 5)</option>
+<option value="314">Diploma / Advanced Certificate (NQF Level 6)</option>
+<option value="315">Bachelor&#39;s Degree / Advanced Diploma (NQF Level 7)</option>
+<option value="316">Bachelor Honours Degree / Postgraduate Diploma / Bachelor&#39;s Degree (NQF Level 8)</option>
+<option value="317">Master&#39;s Degree (NQF Level 9)</option>
+<option value="318">Doctoral Degree (NQF Level 10)</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[13].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_14__ControlTypeId" name="Controls[14].ControlTypeId" type="hidden" value="6" /><input id="Controls_14__DisplayName" name="Controls[14].DisplayName" type="hidden" value="Are you related to anyone currently employed by RMA or its associated companies" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_14__Id" name="Controls[14].Id" type="hidden" value="1016" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_14__IsRequired" name="Controls[14].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_14__IsUnique" name="Controls[14].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_14__IsDefaultSystemControl" name="Controls[14].IsDefaultSystemControl" type="hidden" value="False" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_14__Options_0__Id" name="Controls[14].Options[0].Id" type="hidden" value="319" /><input id="Controls_14__Options_0__Name" name="Controls[14].Options[0].Name" type="hidden" value="Yes" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_14__Options_1__Id" name="Controls[14].Options[1].Id" type="hidden" value="320" /><input id="Controls_14__Options_1__Name" name="Controls[14].Options[1].Name" type="hidden" value="No" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label>Are you related to anyone currently employed by RMA or its associated companies</label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="1016" data-val="true" data-val-number="The field above must be a number." id="Controls_14__SubmittedIntValue" name="Controls[14].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="319">Yes</option>
+<option value="320">No</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[14].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_15__ControlTypeId" name="Controls[15].ControlTypeId" type="hidden" value="8" /><input id="Controls_15__DisplayName" name="Controls[15].DisplayName" type="hidden" value="CV" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_15__Id" name="Controls[15].Id" type="hidden" value="21" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_15__IsRequired" name="Controls[15].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_15__IsUnique" name="Controls[15].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_15__IsDefaultSystemControl" name="Controls[15].IsDefaultSystemControl" type="hidden" value="True" />                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>CV</label>
+
+                                <input class="fu-21" id="file_21" name="file_21" type="file" /><script>
+	kendo.syncReady(function(){jQuery("#file_21").kendoUpload({"success":fuSuccess,"error":fuError,"multiple":false,"async":{"saveUrl":"/default/External/UploadFileAsync?id=21","autoUpload":true},"validation":{"allowedExtensions":[".doc",".docx",".xls",".xlsx",".pdf",".txt",".rtf",".csv"],"maxFileSize":4194304}});});
+</script>
+
+                                <div class="demo-hint">Maximum allowed file size is <strong>4MB</strong>.</div>
+                                <input class="dh-required-fields fu-validator fu-guid-21" data-jobcontrolId="21" id="Controls_15__FileUploadGuid" name="Controls[15].FileUploadGuid" type="hidden" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[15].FileUploadGuid" data-valmsg-replace="true"></span>
+
+
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_16__ControlTypeId" name="Controls[16].ControlTypeId" type="hidden" value="8" /><input id="Controls_16__DisplayName" name="Controls[16].DisplayName" type="hidden" value="Picture" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_16__Id" name="Controls[16].Id" type="hidden" value="34" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_16__IsRequired" name="Controls[16].IsRequired" type="hidden" value="False" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_16__IsUnique" name="Controls[16].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_16__IsDefaultSystemControl" name="Controls[16].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Picture</label>
+
+                                <input class="fu-34" id="file_34" name="file_34" type="file" /><script>
+	kendo.syncReady(function(){jQuery("#file_34").kendoUpload({"success":fuSuccess,"error":fuError,"multiple":false,"async":{"saveUrl":"/default/External/UploadFileAsync?id=34","autoUpload":true},"validation":{"allowedExtensions":[".jpeg",".jpg",".png"],"maxFileSize":4194304}});});
+</script>
+
+                                <div class="demo-hint">Maximum allowed file size is <strong>4MB</strong>.</div>
+                                <input class=" fu-validator fu-guid-34" data-jobcontrolId="34" id="Controls_16__FileUploadGuid" name="Controls[16].FileUploadGuid" type="hidden" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[16].FileUploadGuid" data-valmsg-replace="true"></span>
+
+
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_17__ControlTypeId" name="Controls[17].ControlTypeId" type="hidden" value="8" /><input id="Controls_17__DisplayName" name="Controls[17].DisplayName" type="hidden" value="Copy of Identification/Passport Document" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_17__Id" name="Controls[17].Id" type="hidden" value="1007" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_17__IsRequired" name="Controls[17].IsRequired" type="hidden" value="False" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_17__IsUnique" name="Controls[17].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_17__IsDefaultSystemControl" name="Controls[17].IsDefaultSystemControl" type="hidden" value="False" />                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <label>Copy of Identification/Passport Document</label>
+
+                                <input class="fu-1007" id="file_1007" name="file_1007" type="file" /><script>
+	kendo.syncReady(function(){jQuery("#file_1007").kendoUpload({"success":fuSuccess,"error":fuError,"multiple":false,"async":{"saveUrl":"/default/External/UploadFileAsync?id=1007","autoUpload":true},"validation":{"allowedExtensions":[".doc",".docx",".xls",".xlsx",".pdf",".txt",".rtf",".csv",".jpeg",".jpg",".png"],"maxFileSize":4194304}});});
+</script>
+
+                                <div class="demo-hint">Maximum allowed file size is <strong>4MB</strong>.</div>
+                                <input class=" fu-validator fu-guid-1007" data-jobcontrolId="1007" id="Controls_17__FileUploadGuid" name="Controls[17].FileUploadGuid" type="hidden" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="Controls[17].FileUploadGuid" data-valmsg-replace="true"></span>
+
+
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_18__ControlTypeId" name="Controls[18].ControlTypeId" type="hidden" value="6" /><input id="Controls_18__DisplayName" name="Controls[18].DisplayName" type="hidden" value="Do you agree to Terms and Conditions for applications?" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_18__Id" name="Controls[18].Id" type="hidden" value="22" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_18__IsRequired" name="Controls[18].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_18__IsUnique" name="Controls[18].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_18__IsDefaultSystemControl" name="Controls[18].IsDefaultSystemControl" type="hidden" value="True" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_18__Options_0__Id" name="Controls[18].Options[0].Id" type="hidden" value="284" /><input id="Controls_18__Options_0__Name" name="Controls[18].Options[0].Name" type="hidden" value="Yes" />                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                    <label><a href="/External/Terms" target="_blank">Do you agree to Terms and Conditions for applications?</a></label>
+
+                                    <select class="form-control DynamicControl dh-required-fields select2" data-jobcontrolId="22" data-val="true" data-val-number="The field above must be a number." id="Controls_18__SubmittedIntValue" name="Controls[18].SubmittedIntValue" style="display:block;"><option value="">Select</option>
+<option value="284">Yes</option>
+</select>
+   
+                                <span class="field-validation-valid" data-valmsg-for="Controls[18].SubmittedIntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field ControlTypeId must be a number." data-val-required="The ControlTypeId field is required." id="Controls_19__ControlTypeId" name="Controls[19].ControlTypeId" type="hidden" value="10" /><input id="Controls_19__DisplayName" name="Controls[19].DisplayName" type="hidden" value="Tracking ID" /><input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Controls_19__Id" name="Controls[19].Id" type="hidden" value="1022" /><input data-val="true" data-val-required="The IsRequired field is required." id="Controls_19__IsRequired" name="Controls[19].IsRequired" type="hidden" value="True" /><input data-val="true" data-val-required="The IsUnique field is required." id="Controls_19__IsUnique" name="Controls[19].IsUnique" type="hidden" value="False" /><input data-val="true" data-val-required="The IsDefaultSystemControl field is required." id="Controls_19__IsDefaultSystemControl" name="Controls[19].IsDefaultSystemControl" type="hidden" value="True" /><input class="form-control DynamicControl   dh-required-fields" data-jobcontrolId="1022" id="Controls_19__SubmittedValue" name="Controls[19].SubmittedValue" placeholder="Tracking ID" type="hidden" value="af975007-03d0-4910-a96b-f789407714f3_638655726884739858" />
+
+            </div>
+
+            <div class="row" style="margin-top:20px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                    <br /><br />
+                        <input id="btnCandidateInfoNext" type="button" value="Submit" class="btn job-container-button" />
+                </div>
+            </div>
+        </div>
+            <!-- Screening Questions-->
+            <div id="ScreeningQuestionsContainer" class="container" style="display:none;">
+                <div class="row" style="margin-bottom:20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <span class="Candidate-Application-Main-Label">Please answer the following questions</span>
+                    </div>
+                </div>
+
+                
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_0__Id" name="ScreeningQuestions[0].Id" type="hidden" value="11168" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_0__IsElimination" name="ScreeningQuestions[0].IsElimination" type="hidden" value="False" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_0__QuestionTypeId" name="ScreeningQuestions[0].QuestionTypeId" type="hidden" value="2" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Do you have an NQF 7 qualification, with a strong academic record?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="dh-required-fields" data-controltype="singleselect">
+                                    <select class="form-control dh-required-fields question-controls" data-val="true" data-val-number="The field above must be a number." data-val-required="The above field is required." id="ScreeningQuestions_0__IntValue" name="ScreeningQuestions[0].IntValue"><option value="">Select</option>
+<option value="25494">Yes</option>
+<option value="25495">No</option>
+</select>
+                                </div>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[0].IntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_1__Id" name="ScreeningQuestions[1].Id" type="hidden" value="11169" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_1__IsElimination" name="ScreeningQuestions[1].IsElimination" type="hidden" value="False" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_1__QuestionTypeId" name="ScreeningQuestions[1].QuestionTypeId" type="hidden" value="1" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Please specify which qualification you have?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <textarea class="form-control dh-required-fields question-controls" cols="20" id="ScreeningQuestions_1__StringValue" name="ScreeningQuestions[1].StringValue" rows="2">
+</textarea>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[1].StringValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_2__Id" name="ScreeningQuestions[2].Id" type="hidden" value="11170" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_2__IsElimination" name="ScreeningQuestions[2].IsElimination" type="hidden" value="True" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_2__QuestionTypeId" name="ScreeningQuestions[2].QuestionTypeId" type="hidden" value="2" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Do you have less than 2 years working experience?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="dh-required-fields" data-controltype="singleselect">
+                                    <select class="form-control dh-required-fields question-controls" data-val="true" data-val-number="The field above must be a number." data-val-required="The above field is required." id="ScreeningQuestions_2__IntValue" name="ScreeningQuestions[2].IntValue"><option value="">Select</option>
+<option value="25508">Yes - I have less than 2 years working experience</option>
+<option value="25509">No - I have more than 2 years working experience</option>
+</select>
+                                </div>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[2].IntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_3__Id" name="ScreeningQuestions[3].Id" type="hidden" value="11171" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_3__IsElimination" name="ScreeningQuestions[3].IsElimination" type="hidden" value="True" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_3__QuestionTypeId" name="ScreeningQuestions[3].QuestionTypeId" type="hidden" value="2" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Are you a South African citizen under the age of 36 years?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="dh-required-fields" data-controltype="singleselect">
+                                    <select class="form-control dh-required-fields question-controls" data-val="true" data-val-number="The field above must be a number." data-val-required="The above field is required." id="ScreeningQuestions_3__IntValue" name="ScreeningQuestions[3].IntValue"><option value="">Select</option>
+<option value="25506">Yes</option>
+<option value="25507">No</option>
+</select>
+                                </div>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[3].IntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_4__Id" name="ScreeningQuestions[4].Id" type="hidden" value="11174" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_4__IsElimination" name="ScreeningQuestions[4].IsElimination" type="hidden" value="False" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_4__QuestionTypeId" name="ScreeningQuestions[4].QuestionTypeId" type="hidden" value="2" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Do you have evidence of participation in extra mural activities and leadership roles?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="dh-required-fields" data-controltype="singleselect">
+                                    <select class="form-control dh-required-fields question-controls" data-val="true" data-val-number="The field above must be a number." data-val-required="The above field is required." id="ScreeningQuestions_4__IntValue" name="ScreeningQuestions[4].IntValue"><option value="">Select</option>
+<option value="25504">Yes</option>
+<option value="25505">No</option>
+</select>
+                                </div>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[4].IntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_5__Id" name="ScreeningQuestions[5].Id" type="hidden" value="11172" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_5__IsElimination" name="ScreeningQuestions[5].IsElimination" type="hidden" value="True" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_5__QuestionTypeId" name="ScreeningQuestions[5].QuestionTypeId" type="hidden" value="2" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Have you participated in a similar programme before?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="dh-required-fields" data-controltype="singleselect">
+                                    <select class="form-control dh-required-fields question-controls" data-val="true" data-val-number="The field above must be a number." data-val-required="The above field is required." id="ScreeningQuestions_5__IntValue" name="ScreeningQuestions[5].IntValue"><option value="">Select</option>
+<option value="25500">Yes</option>
+<option value="25501">No</option>
+</select>
+                                </div>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[5].IntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+<input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="ScreeningQuestions_6__Id" name="ScreeningQuestions[6].Id" type="hidden" value="11173" /><input data-val="true" data-val-required="The IsElimination field is required." id="ScreeningQuestions_6__IsElimination" name="ScreeningQuestions[6].IsElimination" type="hidden" value="False" /><input data-val="true" data-val-number="The field QuestionTypeId must be a number." data-val-required="The QuestionTypeId field is required." id="ScreeningQuestions_6__QuestionTypeId" name="ScreeningQuestions[6].QuestionTypeId" type="hidden" value="2" />                        <div class="row spacing">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                Do you have a strong desire to work in financial services, more specifically within the Insurance Industry?
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="dh-required-fields" data-controltype="singleselect">
+                                    <select class="form-control dh-required-fields question-controls" data-val="true" data-val-number="The field above must be a number." data-val-required="The above field is required." id="ScreeningQuestions_6__IntValue" name="ScreeningQuestions[6].IntValue"><option value="">Select</option>
+<option value="25502">Yes</option>
+<option value="25503">No</option>
+</select>
+                                </div>
+                                <span class="field-validation-valid" data-valmsg-for="ScreeningQuestions[6].IntValue" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                        <br /><br />
+                        <input id="btnScreeningBackToCandidateInfo" type="button" value="Back" class="btn job-container-button" />
+                        <input id="btnSubmitCandidate" type="submit" value="Submit" class="btn job-container-button" />
+                    </div>
+                </div>
+            </div>
+</form></div>
+
+<!-- Footer -->
+
+<!-- Modal -->
+<div class="modal fade" id="PreviouslyAppliedModal" role="dialog" style="z-index:10000;"></div>
+
+
+<script> var fileLanguage = "en-GB"; if ("en-GB" == "es") { fileLanguage = "es"; }</script>
+
+<script src="/bundles/jqueryval?v=HUnWHC2b5grAS8wOpMkMP2__r6FzKX1bL6kMF9696GM1"></script>
+
+
+<style>
+
+    .panel-heading a:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e114";
+        float: right;
+        color: grey;
+    }
+
+    .panel-heading a.collapsed:after {
+        content: "\e080";
+    }
+
+    .multiselect-container {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .multiselect-native-select .dropdown-toggle {
+        border-radius: 0px;
+    }
+
+    .input-group-addon:hover {
+        cursor: pointer;
+    }
+
+    .dates {
+        background-color: #ffffff !important;
+    }
+
+</style>
+
+<script>
+
+
+    function fuSuccess(e) {
+        const result = JSON.parse(JSON.parse(e.XMLHttpRequest.responseText));
+        if (result.Guid != '') {
+            $(".fu-guid-" + result.Id).val(result.Guid);
+            $('#ExternalApplicationForm').valid();
+        }
+    }
+
+    function fuError(e) {
+        const result = JSON.parse(JSON.parse(e.XMLHttpRequest.responseText));
+        const id = result.Id;
+        $(".fu-" + id).parent().parent().parent().find(".k-file-name").text(result.Message);
+        $(".fu-guid-" + result.Id).val('');
+    }
+
+
+    $(function () {
+
+        $('#ExternalApplicationForm').ajaxForm({
+            beforeSubmit: function (arr, $form, options) {
+
+                gtag('event', 'application_form_submit_click', {
+                       application_tracking_id: 'af975007-03d0-4910-a96b-f789407714f3_638655726884739858',
+                       job_reference_number: 'RM-613'
+                     });//Do not change event descriptions
+
+                $("input[type=submit]").attr('disabled', true).attr('value', 'Loading...');
+
+
+
+                if (!$("#ExternalApplicationForm").valid()) {
+                    gtag('event', 'application_form_validation_failed', {
+                              application_tracking_id: 'af975007-03d0-4910-a96b-f789407714f3_638655726884739858',
+                              job_reference_number: 'RM-613'
+                            });//Do not change event descriptions
+                    Lobibox.alert('info',
+                        {
+                            title: "Information",
+                            msg: "Please complete all required fields."
+                        });
+                    $("input[type=submit]").attr('disabled', false).attr('value', 'Submit');
+                    return false;
+                }
+
+            },
+            complete: function (result) {
+                result = jQuery.parseJSON(result.responseText);
+
+                if (result.Result === -1) {
+
+                    var Ref = '';
+
+                    if (result.Message != null && result.Message != "") {
+                        Ref = '?Ref=' + result.Message;
+                    }
+
+                    if (result.Data != 'default') {
+                        window.location.href = "/" + result.Data + "/External/CurrentOpportunities" + Ref;
+                    }
+                    else {
+                        window.location.href = "/External/CurrentOpportunities" + Ref;
+                    }
+                }
+                else if (result.Result === 0) {
+                    gtag('event', 'application_form_error', {
+                              application_tracking_id: 'af975007-03d0-4910-a96b-f789407714f3_638655726884739858',
+                              job_reference_number: 'RM-613'
+                            });//Do not change event descriptions
+                    Lobibox.alert('error', { msg: result.Message });
+                    $("input[type=submit]").attr('disabled', false).attr('value', 'Submit');
+                }
+                else if (result.Result === 1) {
+                     gtag('event', 'job_application_submit', {
+                              application_tracking_id: 'af975007-03d0-4910-a96b-f789407714f3_638655726884739858',
+                              job_reference_number: 'RM-613'
+                            });//Do not change event descriptions
+                    if (result.Data != 'default') {
+                        window.location.href = '/' + result.Data + '/External/ApplicationSuccessful?Ref=' + result.Message;
+                    }
+                    else {
+                        window.location.href = '/External/ApplicationSuccessful?Ref=' + result.Message;
+                    }
+                }
+                else if (result.Result === 2) {
+                    if (result.Data != 'default') {
+                        window.location.href = '/' + result.Data + '/External/PreviouslyApplied?Ref=' + result.Message;
+                    }
+                    else {
+                        window.location.href = '/External/PreviouslyApplied?Ref=' + result.Message;
+                    }
+                }
+                else if (result.Result === 3) {
+                    gtag('event', 'cv_submit', {
+                              application_tracking_id: 'af975007-03d0-4910-a96b-f789407714f3_638655726884739858',
+                              job_reference_number: 'RM-613'
+                            });//Do not change event descriptions
+                    if (result.Data != 'default') {
+                        window.location.href = '/' + result.Data + '/External/SubmissionSuccessful?Ref=' + result.Message;
+                    }
+                    else {
+                        window.location.href = '/External/SubmissionSuccessful?Ref=' + result.Message;
+                    }
+                }
+            }
+        });
+    });
+
+
+    $("#btnCandidateInfoNext").on("click", function () {
+
+
+        if ($("#ExternalApplicationForm").valid()) {
+            $("#CandidateDetailsContainer").hide();
+            $("#ScreeningQuestionsContainer").show();
+        }
+    });
+
+    $("#btnScreeningBackToCandidateInfo").on("click", function () {
+        $("#CandidateDetailsContainer").show();
+        $("#ScreeningQuestionsContainer").hide();
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=&product=sop' async='async'></script>
+    <script src="/Scripts/ViewScripts/layout.min.js"></script>
+    
+
+    <script>
+
+        function reloadShareThis() {
+            try {
+                window.__sharethis__.initialize();
+            }
+            catch (ex) {
+                console.log('Share This Failed to load' + ex);
+            }
+        }
+
+        $("input[type='text']").attr("autocomplete", "off");
+
+        function loadDynamicContent() {
+            try {
+                addthis.toolbox('.share-external');
+            }
+            catch (ex) {
+                console.log('AdThis Failed to load');
+            }
+
+        }
+
+        $(document).ajaxStart(function () {
+            $('#AjaxLoaderContainer').show();
+        }).ajaxStop(function () {
+
+            $('#AjaxLoaderContainer').hide();
+        }).ajaxError(function () {
+
+            $('#AjaxLoaderContainer').hide();
+        });
+
+        function ShowLoader() {
+            document.getElementById("AjaxLoaderContainer").style.display = "block";
+        }
+
+        function HideLoader() {
+            document.getElementById("AjaxLoaderContainer").style.display = "none";
+        }
+    </script>
+
+
+    <div id="AjaxLoaderContainer" style="position:fixed;left:0px;right:0px;top:0px;bottom:0px;background-color:rgba(50,50,50,0.5);z-index:999999999;display:none;">
+        <div style="position:absolute;left:50%;margin-left:-100px;width:200px;height:200px;top:50%;margin-top:-100px;">
+            <img src="/Images/loader2.svg" style="width:200px;height:200px;" />
+        </div>
+    </div>
+
+</body>
+</html>
